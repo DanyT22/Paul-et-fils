@@ -1,0 +1,51 @@
+@use "../../abstracts/index" as *;
+
+.reliability{
+    margin-top: 10px;
+
+    &__title{
+        color: $couleurFamily;
+
+        @media (min-width: $laptop){
+            font-size: 70px;
+        }
+    }
+
+    &__item{
+        @include flex;
+        background-image: url(../../../images/2hommes-portent-un-meuble.webp);
+        background-size: cover;
+        height: 200px;
+
+        @media (min-width: $laptop){
+            width: 90%;
+            height: 400px;
+            margin: auto;
+        }
+    }
+
+    &__flex{
+        @include flex;
+        flex-wrap: wrap;
+    }
+
+    &__content{
+        @include flex;
+        width: 100%;
+        height: 30px;
+
+        @media (min-width: $laptop){
+            width: 30%;
+            height: 100px;
+        }
+
+        &-one{
+            background-color:$couleurPrincipale;
+            color: $couleurFamily;
+        }
+        &-two{
+            background-color: $couleurSecondaire;
+            color: $couleurFamily;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@use "../../abstracts/index" as *;
+
+.presentation{
+    @include flex;
+    flex-direction: column;
+    background-color: $couleurSecondaire;
+    text-align: left;
+
+    @media (min-width: $laptop){
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__item{
+        padding: 10px 20px;
+
+        @media (min-width: $laptop){
+            width: 40%;
+            padding-left: 50px;
+        }
+    }
+
+    &__title{
+        color: $couleurFamily;
+        font-weight: 900;
+        margin: 10px 0;
+
+        @media (min-width: $laptop){
+            font-size: 70px;
+            max-width: 50%;
+        }
+    }
+
+    &__button{
+        @include button-one;
+        margin: 10px 0;
+    }
+
+    &__img{
+        width: 100%;
+        height: auto;
+
+        @media (min-width: $laptop){
+            width: 50%;
+        }
+    }
+}

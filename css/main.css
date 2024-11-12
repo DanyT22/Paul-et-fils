@@ -1,0 +1,456 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  height: 50px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  background-color: #000000;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+@media (min-width: 576px) {
+  header {
+    flex-direction: row;
+    padding-top: 0;
+    height: 100px;
+  }
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+header li {
+  margin: 5px;
+}
+header li a {
+  color: #fcfcff;
+}
+header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  background-color: #ff5729;
+  width: 100%;
+  border-bottom: solid 1px;
+}
+@media (min-width: 576px) {
+  header div {
+    width: 10%;
+    height: 100px;
+    border: none;
+  }
+}
+header div a {
+  color: #000000;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  background-color: #000000;
+  color: #fcfcff;
+  justify-content: space-between;
+}
+footer div {
+  margin-top: 20px;
+}
+
+.hero {
+  background-image: url(../../../images/homme-carton-camionnette.webp);
+  background-size: cover;
+  background-position: 50%;
+  height: 300px;
+  padding: 50px 20px;
+}
+@media (min-width: 576px) {
+  .hero {
+    height: 700px;
+    padding-left: 100px;
+  }
+}
+.hero__title {
+  color: #fcfcff;
+  font-size: 30px;
+  font-weight: 900;
+}
+@media (min-width: 576px) {
+  .hero__title {
+    font-size: 100px;
+  }
+}
+@media (min-width: 576px) {
+  .hero__title {
+    max-width: 60%;
+    margin-bottom: 20px;
+  }
+}
+.hero__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: column;
+}
+@media (min-width: 576px) {
+  .hero__content {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+.hero__item {
+  height: 100px;
+  width: 150px;
+  padding: 20px 10px 0;
+  font-size: 15px;
+}
+@media (min-width: 576px) {
+  .hero__item {
+    padding: 20px 20px 0;
+  }
+}
+.hero__item-one {
+  background-color: #000000;
+  color: #fcfcff;
+}
+.hero__item-two {
+  background-color: #ff5729;
+}
+
+.presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #ff5729;
+  text-align: left;
+}
+@media (min-width: 576px) {
+  .presentation {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.presentation__item {
+  padding: 10px 20px;
+}
+@media (min-width: 576px) {
+  .presentation__item {
+    width: 40%;
+    padding-left: 50px;
+  }
+}
+.presentation__title {
+  color: #fcfcff;
+  font-weight: 900;
+  margin: 10px 0;
+}
+@media (min-width: 576px) {
+  .presentation__title {
+    font-size: 70px;
+    max-width: 50%;
+  }
+}
+.presentation__button {
+  background-color: #000000;
+  color: #fcfcff;
+  padding: 5px 20px;
+  border: none;
+  margin: 10px 0;
+}
+.presentation__img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 576px) {
+  .presentation__img {
+    width: 50%;
+  }
+}
+
+.service {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.service__title {
+  margin: 10px;
+}
+@media (min-width: 576px) {
+  .service__title {
+    font-size: 70px;
+    margin: 30px;
+  }
+}
+.service__grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 576px) {
+  .service__grid {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 100px;
+  }
+}
+.service__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+@media (min-width: 576px) {
+  .service__item {
+    text-align: left;
+  }
+}
+.service__img {
+  width: 80%;
+  height: auto;
+}
+@media (min-width: 576px) {
+  .service__img {
+    width: 100%;
+  }
+}
+.service__text-section {
+  max-width: 90%;
+}
+@media (min-width: 576px) {
+  .service__text-section {
+    padding: 20px;
+  }
+}
+.service__description {
+  margin: 10px 0;
+}
+@media (min-width: 576px) {
+  .service__description {
+    max-width: 70%;
+  }
+}
+.service__button {
+  background-color: #ff5729;
+  padding: 5px 20px;
+  border: none;
+}
+
+.reliability {
+  margin-top: 10px;
+}
+.reliability__title {
+  color: #fcfcff;
+}
+@media (min-width: 576px) {
+  .reliability__title {
+    font-size: 70px;
+  }
+}
+.reliability__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  background-image: url(../../../images/2hommes-portent-un-meuble.webp);
+  background-size: cover;
+  height: 200px;
+}
+@media (min-width: 576px) {
+  .reliability__item {
+    width: 90%;
+    height: 400px;
+    margin: auto;
+  }
+}
+.reliability__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.reliability__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 30px;
+}
+@media (min-width: 576px) {
+  .reliability__content {
+    width: 30%;
+    height: 100px;
+  }
+}
+.reliability__content-one {
+  background-color: #000000;
+  color: #fcfcff;
+}
+.reliability__content-two {
+  background-color: #ff5729;
+  color: #fcfcff;
+}
+
+.qualification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+@media (min-width: 576px) {
+  .qualification {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+}
+.qualification__title {
+  margin: 10px;
+}
+.qualification__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+@media (min-width: 576px) {
+  .qualification__item {
+    margin: 20px;
+  }
+}
+.qualification__item-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.devis {
+  background-color: #ff5729;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+@media (min-width: 576px) {
+  .devis {
+    padding: 50px 0;
+  }
+}
+.devis__title {
+  color: #fcfcff;
+  margin: 10px;
+}
+@media (min-width: 576px) {
+  .devis__title {
+    font-size: 50px;
+  }
+}
+.devis__form {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 576px) {
+  .devis__form {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.devis__label {
+  display: block;
+  margin: 10px;
+}
+@media (min-width: 576px) {
+  .devis__input {
+    padding: 20px 30px;
+  }
+}
+.devis__submit {
+  background-color: #000000;
+  color: #fcfcff;
+  padding: 5px 20px;
+  border: none;
+  margin: 10px;
+}
+@media (min-width: 576px) {
+  .devis__submit {
+    grid-column: 2 span;
+    width: auto;
+  }
+}
+
+.presentation-service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.presentation-service__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.presentation-service__item-one {
+  background-color: #ff5729;
+  width: 100%;
+  height: 100px;
+}
+@media (min-width: 576px) {
+  .presentation-service__item-one {
+    width: 50%;
+    height: 200px;
+  }
+}
+.presentation-service__item-two {
+  text-align: left;
+  padding: 20px;
+}
+@media (min-width: 576px) {
+  .presentation-service__item-two {
+    width: 50%;
+    padding: 0;
+  }
+}
+.presentation-service__description {
+  max-width: 80%;
+}
+.presentation-service__button {
+  margin: 20px;
+  background-color: #ff5729;
+  padding: 5px 20px;
+  border: none;
+}/*# sourceMappingURL=main.css.map */

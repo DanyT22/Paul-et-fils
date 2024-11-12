@@ -1,0 +1,27 @@
+@use "variables" as *;
+
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+@mixin grid{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+}
+
+@mixin button-one{
+    background-color: $couleurPrincipale;
+    color: $couleurFamily;
+    padding: 5px 20px;
+    border: none;
+}
+@mixin button-two{
+    background-color: $couleurSecondaire;
+    padding: 5px 20px;
+    border: none;
+}

@@ -1,0 +1,60 @@
+@use "../../abstracts/index" as *;
+
+.hero{
+    background-image: url(../../../images/homme-carton-camionnette.webp);
+    background-size: cover;
+    background-position: 50%;
+    height: 300px;
+    padding: 50px 20px;
+
+    @media (min-width: $laptop){
+        height: 700px;
+        padding-left: 100px;
+    }
+
+    &__title{
+        color: $couleurFamily;
+        font-size: 30px;
+        font-weight: 900;
+
+        @media (min-width: $laptop){
+            font-size: 100px;
+        }
+
+        @media (min-width: $laptop){
+            max-width: 60%;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__content{
+        @include flex;
+        align-items: flex-start;
+        flex-direction: column;
+
+        @media (min-width: $laptop){
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+    }
+
+    &__item{
+        height: 100px;
+        width: 150px;
+        padding: 20px 10px 0;
+        font-size: 15px;
+
+        @media (min-width: $laptop){
+            padding: 20px 20px 0;
+        }
+
+        &-one{
+            background-color: $couleurPrincipale;
+            color: $couleurFamily;
+        }
+
+        &-two{
+            background-color: $couleurSecondaire;
+        }
+    }
+}

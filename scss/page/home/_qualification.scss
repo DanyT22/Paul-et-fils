@@ -1,0 +1,28 @@
+@use "../../abstracts/index" as *;
+
+.qualification{
+    @include flex;
+
+    @media (min-width: $laptop){
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    &__title{
+        margin: 10px;
+    }
+
+    &__item{
+        @include flex;
+
+        @media (min-width: $laptop){
+            margin: 20px;
+        }
+
+        &-text{
+            @include flex;
+            flex-direction: column;
+        }
+    }
+
+}

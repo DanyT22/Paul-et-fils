@@ -1,0 +1,39 @@
+@use "../../abstracts/index" as *;
+
+.presentation-service{
+    @include flex;
+
+    &__item{
+        @include flex;
+
+        &-one{
+            background-color: $couleurSecondaire;
+            width: 100%;
+            height: 100px;
+
+            @media (min-width: $laptop){
+                width: 50%;
+                height: 200px;
+            }
+        }
+
+        &-two{
+            text-align: left;
+            padding: 20px;
+
+            @media (min-width: $laptop){
+                width: 50%;
+                padding: 0;
+            }
+        }
+    }
+
+    &__description{
+        max-width: 80%;
+    }
+
+    &__button{
+        margin: 20px;
+        @include button-two
+    }
+}
