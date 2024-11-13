@@ -67,7 +67,12 @@ footer {
   flex-wrap: wrap;
   background-color: #000000;
   color: #fcfcff;
-  justify-content: space-between;
+  justify-content: center;
+}
+@media (min-width: 576px) {
+  footer {
+    justify-content: space-between;
+  }
 }
 footer div {
   margin-top: 20px;
@@ -443,6 +448,7 @@ footer div {
   .presentation-service__item-two {
     width: 50%;
     padding: 0;
+    flex-direction: column;
   }
 }
 .presentation-service__description {
