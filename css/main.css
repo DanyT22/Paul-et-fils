@@ -80,6 +80,7 @@ footer div {
 
 .hero {
   background-image: url(../../../images/homme-carton-camionnette.webp);
+  box-shadow: inset 0 0 0 10000px rgba(0, 0, 0, 0.5411764706);
   background-size: cover;
   background-position: 50%;
   height: 300px;
@@ -279,6 +280,7 @@ footer div {
   text-align: center;
   flex-wrap: wrap;
   background-image: url(../../../images/2hommes-portent-un-meuble.webp);
+  box-shadow: inset 0 0 0 10000px rgba(0, 0, 0, 0.6156862745);
   background-size: cover;
   height: 200px;
 }
